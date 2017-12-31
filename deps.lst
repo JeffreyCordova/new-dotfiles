@@ -1,4 +1,7 @@
+alsa-utils
 arc-gtk-theme
+auracle-git
+aurutils
 bspwm
 cmake
 compton
@@ -8,8 +11,8 @@ feh
 figlet
 firefox
 fzf
+glances
 gnome-themes-standard
-gtop
 gucharmap
 hexchat
 imagemagick
@@ -18,6 +21,7 @@ jq
 julia
 lxsession
 mesa
+meson
 neofetch
 neovim
 nodejs
@@ -50,10 +54,11 @@ texlive-most
 texstudio
 tmux
 tree
+trizen
 ttf-roboto
 ttf-roboto-mono
 vim
-visual-studio-code
+visual-studio-code-bin
 wmctrl
 xclip
 xdg-utils
