@@ -7,7 +7,7 @@
 #                                
 
 sudo pacman -S $(cat deps/official.lst)
-trizen -S --needed $(cat deps/aur.lst)
+trizen -S --needed --noconfirm $(cat deps/aur.lst)
 
 # stow
 PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources \
@@ -17,4 +17,8 @@ for pkg in "${PKGS[@]}"; do
     stow $pkg
 done
 
-#sudo npm install -g neovim
+sudo npm install -g neovim
+gem install neovim
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"
+rm -rf coreutils-8.2
