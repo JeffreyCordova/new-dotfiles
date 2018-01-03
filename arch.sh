@@ -18,4 +18,4 @@ cp chroot.sh /mnt/
 arch-chroot /mnt ./chroot.sh
 rm /mnt/chroot.sh
 
-reboot
+echo done
