@@ -9,6 +9,8 @@
 sudo pacman -S $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
 
+chsh -s /usr/bin/zsh
+
 # stow
 PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources \
     rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
