@@ -24,6 +24,8 @@ pacman -Syy
 pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
 systemctl enable vboxservice
 
+pacman -S git
+
 passwd
 
 useradd -m -G wheel -s /bin/bash jeff

@@ -6,7 +6,7 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-sudo pacman -S git reflector
+sudo pacman -S reflector
 sudo reflector --verbose --protocol https -l 200 --sort rate --save /etc/pacman.d/mirrorlist
 
 git clone https://aur.archlinux.org/trizen

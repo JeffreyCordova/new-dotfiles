@@ -10,6 +10,7 @@ glances
 gucharmap
 hexchat
 julia
+libx264
 lxsession
 neovim
 nodejs
@@ -25,7 +26,6 @@ python-virtualenvwrapper
 python-xdg
 qbittorrent
 qt5ct
-reflector
 ripgrep
 rofi
 ruby
