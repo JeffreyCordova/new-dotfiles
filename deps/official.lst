@@ -25,6 +25,7 @@ python-virtualenvwrapper
 python-xdg
 qbittorrent
 qt5ct
+reflector
 ripgrep
 rofi
 ruby
@@ -35,8 +36,8 @@ texlive-science
 texstudio
 tmux
 tree
+ttf-droid
 ttf-roboto
-vim
 wget
 wmctrl
 xclip
