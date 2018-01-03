@@ -1,8 +1,5 @@
-alsa-utils
 arc-gtk-theme
-aurutils
 bspwm
-compton
 dex
 dunst
 figlet
@@ -31,7 +28,6 @@ python-virtualenvwrapper
 python-xdg
 qbittorrent
 qt5ct
-reflector
 ripgrep
 rofi
 ruby
@@ -43,11 +39,9 @@ texlive-science
 texstudio
 tmux
 tree
-trizen
 ttf-roboto
 ttf-roboto-mono
 vim
-virtualbox-guest-utils
 visual-studio-code-bin
 wget
 wmctrl
