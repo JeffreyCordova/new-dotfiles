@@ -7,7 +7,7 @@
 #                                
 
 sudo pacman -S $(cat deps/official.lst)
-trizen -S $(cat deps/aur.lst)
+trizen -S --needed $(cat deps/aur.lst)
 
 # stow
 PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources \
