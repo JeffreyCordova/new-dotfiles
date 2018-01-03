@@ -21,10 +21,11 @@ sed -i '/Color/s/^#//' /etc/pacman.conf
 sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 pacman -Syy
 
+pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
+systemctl enable vboxservice
+
 passwd
 
 useradd -m -G wheel -s /bin/bash jeff
 passwd jeff
 visudo
-
-exit

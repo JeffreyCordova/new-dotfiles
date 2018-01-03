@@ -6,9 +6,6 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-sudo pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
-sudo systemctl enable vboxservice
-
 sudo pacman -S git reflector
 sudo reflector --verbose --protocol https -l 200 --sort rate --save /etc/pacman.d/mirrorlist
 
@@ -17,6 +14,9 @@ cd trizen
 makepkg -sri
 cd ..
 rm -rf trizen
+
+git clone https://github.com/JeffreyCordova/new-dotfiles dotfiles
+cd dotfiles
 
 sudo pacman -S $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
