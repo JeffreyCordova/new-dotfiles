@@ -1,0 +1,21 @@
+#!/bin/sh
+stow bspwm
+stow dunst
+stow git
+stow gtk
+stow julia
+stow npm
+stow nvim
+stow polybar
+stow profile
+stow resources
+stow rofi
+stow scripts
+stow sxhkd
+stow templates
+stow termite
+stow tmux
+stow vscode
+stow xorg
+stow xwinmosaic
+stow zsh

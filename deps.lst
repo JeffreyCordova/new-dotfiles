@@ -11,7 +11,6 @@ fzf
 glances
 gucharmap
 hexchat
-ipython
 julia
 lxsession
 neofetch
@@ -28,7 +27,6 @@ python-click
 python-gobject
 python-neovim
 python-pylint
-python-virtualenv
 python-virtualenvwrapper
 python-xdg
 qbittorrent
@@ -37,7 +35,6 @@ reflector
 ripgrep
 rofi
 ruby
-spotify
 stow
 sxhkd
 tcharmap-git
@@ -50,6 +47,7 @@ trizen
 ttf-roboto
 ttf-roboto-mono
 vim
+virtualbox-guest-utils
 visual-studio-code-bin
 wget
 wmctrl

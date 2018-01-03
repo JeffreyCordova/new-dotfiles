@@ -6,9 +6,9 @@ mkdir -p "$(dirname $walldf)"
 
 distribute_desktops() {
     primary="0x00400002"
-    other="0x00400004"
+    #other="0x00400004"
     bspc monitor $primary -d 1 2 3
-    bspc monitor $other -d 9 10
+    #bspc monitor $other -d 9 10
 }
 
 count_windows() {
