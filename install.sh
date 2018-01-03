@@ -17,6 +17,7 @@ rm -rf trizen
 
 git clone https://github.com/JeffreyCordova/new-dotfiles dotfiles
 cd dotfiles
+git checkout virtualbox
 
 sudo pacman -S $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
