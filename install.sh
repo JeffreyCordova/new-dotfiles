@@ -6,14 +6,14 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-cmd="trizen -S"
-$cmd $(cat deps.lst)
+sudo pacman -S $(cat deps/official.lst)
+trizen -S $(cat deps/aur.lst)
 
 # stow
-PKGS=(bspwm dunst git gtk julia npm nvim polybar profile resources \
-    rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh)
+PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources \
+    rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
 
-for pkg in PKGS; do
+for pkg in "${PKGS[@]}"; do
     stow $pkg
 done
 
