@@ -1,0 +1,16 @@
+pkgs.lst
+
+nvim/.config/nvim/autoload
+nvim/.config/nvim/plugged
+
+vscode/.config/Code/Backups
+vscode/.config/Code/Cache
+vscode/.config/Code/CachedData
+vscode/.config/Code/CachedExtensions
+vscode/.config/Code/Cookies
+vscode/.config/Code/Cookies-journal
+vscode/.config/Code/Local\ Storage
+vscode/.config/Code/Preferences
+vscode/.config/Code/logs
+vscode/.config/Code/machineid
+vscode/.config/Code/storage.json

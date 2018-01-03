@@ -18,7 +18,7 @@ alert = #bd2c40
 
 [bar/base]
 width = 100%
-height = 35
+height = 30
 fixed-center = false
 
 background = ${colors.background}
@@ -53,25 +53,6 @@ monitor = DP-2
 [bar/secondary]
 inherit = bar/base
 monitor = DP-3
-
-modules-left = bspwm
-modules-center = 
-modules-right = date 
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-;mount-1 = /home
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
