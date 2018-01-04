@@ -1,14 +1,16 @@
-arc-gtk-theme
 bspwm
 dex
 dunst
+evince
 feh
 figlet
 firefox
 fzf
 glances
+gnome-themes-standard
 gucharmap
 hexchat
+imagemagick
 jq
 julia
 libx264
@@ -46,4 +48,5 @@ xdg-utils
 xorg-server
 xorg-xinit
 xorg-xsetroot
+xorg-xprop
 zsh

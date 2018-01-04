@@ -7,7 +7,10 @@
 #                                
 
 sudo pacman -S reflector
-sudo reflector --verbose --protocol https -l 200 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --protocol https \
+                         -l 200 \
+                         --sort rate \
+                         --save /etc/pacman.d/mirrorlist
 
 git clone https://aur.archlinux.org/trizen
 cd trizen
@@ -15,7 +18,7 @@ makepkg -sri
 cd ..
 rm -rf trizen
 
-git clone https://github.com/JeffreyCordova/new-dotfiles dotfiles
+git clone https://github.com/JeffreyCordova/dotfiles
 cd dotfiles
 git checkout virtualbox
 
