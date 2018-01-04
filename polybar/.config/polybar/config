@@ -8,9 +8,9 @@
 ;=====================================================
 
 [colors]
-background = #101015
-background-alt = #292935
-foreground = #dedede
+background = #151515
+background-alt = #292929
+foreground = #d7d0c7
 foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053

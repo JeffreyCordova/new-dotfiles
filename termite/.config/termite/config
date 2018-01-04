@@ -33,9 +33,9 @@ filter_unmatched_urls = true
 
 [colors]
 #cursor = #dcdccc
-foreground = #dedede
-foreground_bold = #dedede
-background = #101015
+foreground = #d7d0c7
+foreground_bold = #d7d0c7
+background = #151515
 
 # colors from color0 to color254 can be set
 #color0 = #292935
