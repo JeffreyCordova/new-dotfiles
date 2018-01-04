@@ -41,8 +41,8 @@ rm -rf coreutils-8.2
 FONTS=( Bold Light Medium )
 cd /usr/share/fonts/OTF
 for font in "${FONTS[@]}"; do
-    curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/\
-        Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete.otf
-    curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/\
-        Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete\ Mono.otf
+    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete.otf
+    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete\ Mono.otf
 done
+
+cd ~/dotfiles
