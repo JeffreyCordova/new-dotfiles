@@ -14,9 +14,9 @@ mount /dev/sda1 /mnt
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
-curl -O https://raw.githubusercontent.com/JeffreyCordova/new-dotfiles/virtualbox/install/chroot.sh
+curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/virtualbox/install/chroot.sh
 chmod +x chroot.sh
 
 cp chroot.sh /mnt/
 arch-chroot /mnt ./chroot.sh
-rm arch.sh chroot.sh /mnt/chroot.sh
+rm chroot.sh /mnt/chroot.sh
