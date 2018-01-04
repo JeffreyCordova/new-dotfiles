@@ -11,7 +11,7 @@ echo "127.0.1.1\tc137.localdomain\tc137" >> /etc/hosts
 
 systemctl enable dhcpcd
 
-pacman -S grub
+pacman -S --noconfirm grub
 grub-install /dev/sda
 sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/ s/^\(.*\)\("\)/\1 video=1920x1080\2/' \
     /etc/default/grub
@@ -21,10 +21,10 @@ sed -i '/Color/s/^#//' /etc/pacman.conf
 sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 pacman -Syy
 
-pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
+pacman -S --noconfirm virtualbox-guest-utils virtualbox-guest-modules-arch
 systemctl enable vboxservice
 
-pacman -S git
+pacman -S --noconfirm git
 
 passwd
 

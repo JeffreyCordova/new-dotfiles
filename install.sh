@@ -6,7 +6,7 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-sudo pacman -S reflector
+sudo pacman -S --noconfirm reflector
 sudo reflector --verbose --protocol https \
                          -l 200 \
                          --sort rate \
@@ -19,7 +19,7 @@ makepkg -sri
 cd ..
 rm -rf trizen
 
-sudo pacman -S $(cat deps/official.lst)
+sudo pacman -S --noconfirm $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
 
 chsh -s /usr/bin/zsh
