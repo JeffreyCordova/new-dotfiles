@@ -11,6 +11,7 @@ sudo reflector --verbose --protocol https \
                          -l 200 \
                          --sort rate \
                          --save /etc/pacman.d/mirrorlist
+sudo pacman -Syy
 
 git clone https://aur.archlinux.org/trizen
 cd trizen
