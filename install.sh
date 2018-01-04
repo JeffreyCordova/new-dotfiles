@@ -38,11 +38,11 @@ gem install neovim
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"
 rm -rf coreutils-8.2
 
-FONTS=( Bold Light Medium )
-cd /usr/share/fonts/OTF
-for font in "${FONTS[@]}"; do
-    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete.otf
-    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete\ Mono.otf
-done
+#FONTS=( Bold Light Medium )
+#cd /usr/share/fonts/OTF
+#for font in "${FONTS[@]}"; do
+#    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete.otf
+#    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete\ Mono.otf
+#done
 
-cd ~/dotfiles
+#cd ~/dotfiles
