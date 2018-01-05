@@ -75,7 +75,7 @@ super + {_,shift + } w
     bspc node -{c,k}
 
 # focus/send to the given desktop
-super + {_,shift + }{1-3,9,101
+super + {_,shift + }{1-3,9,10}
     bspc {desktop -f,node -d} {1,2,3,9,10}
 
 # focus/send to last desktop

@@ -6,6 +6,9 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
+sudo pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
+sudo systemctl enable vboxservice
+
 sudo pacman -S --noconfirm reflector
 sudo reflector --verbose --protocol https \
                          -l 200 \
@@ -18,6 +21,9 @@ cd trizen
 makepkg -sri
 cd ..
 rm -rf trizen
+
+gpg --recv-keys 1EB2638FF56C0C53
+gpg --recv-keys DBE7D3DD8C81D58D0A13D0E76BC26A17B9B7018A
 
 sudo pacman -S --noconfirm $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
@@ -33,16 +39,6 @@ for pkg in "${PKGS[@]}"; do
 done
 
 sudo npm install -g neovim
-gem install neovim
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"
 rm -rf coreutils-8.2
-
-#FONTS=( Bold Light Medium )
-#cd /usr/share/fonts/OTF
-#for font in "${FONTS[@]}"; do
-#    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete.otf
-#    sudo curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/patched-fonts/Hermit/$font/complete/Hurmit\ $font\ Nerd\ Font\ Complete\ Mono.otf
-#done
-
-#cd ~/dotfiles

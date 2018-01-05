@@ -25,37 +25,46 @@ call plug#begin(CONFIGS . '/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'nanotech/jellybeans.vim'
 Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 
 " file navigation
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'thaerkh/vim-workspace'
 
 " commenting
 Plug 'scrooloose/nerdcommenter'
 
-" automatic parentesis
+" automatic parentheses
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 
 " syntax check, task runner
 Plug 'neomake/neomake'
+Plug 'junegunn/fzf'
+Plug 'scrooloose/syntastic'
 
 " git
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 " misc
 Plug 'troydm/zoomwintab.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kshenoy/vim-signature'
 Plug 'wesQ3/vim-windowswap'
-Plug 'milkypostman/vim-togglelist'
 Plug 'godlygeek/tabular'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " langs
 Plug 'tmhedberg/SimpylFold'
+Plug 'python-mode/python-mode'
 Plug 'othree/xml.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'julialang/julia-vim'
 
 call plug#end()
 

@@ -1,4 +1,6 @@
 bspwm
+cmake
+bspwm
 dex
 dunst
 evince
@@ -31,7 +33,6 @@ qbittorrent
 qt5ct
 ripgrep
 rofi
-ruby
 stow
 sxhkd
 termite
@@ -41,6 +42,10 @@ tmux
 tree
 ttf-droid
 ttf-roboto
+ttf-roboto-mono
+virtualbox-guest-utils
+virtualbox-guest-modules-arch
+visual-studio-code-bin
 wget
 wmctrl
 xclip
