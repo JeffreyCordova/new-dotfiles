@@ -1,6 +1,4 @@
 alsa-utils
-auracle-git
-aurutils
 bspwm
 cmake
 compton
@@ -28,7 +26,6 @@ nodejs
 npm
 ntfs-3g
 otf-overpass
-pacaur
 parted
 pcmanfm
 psutils

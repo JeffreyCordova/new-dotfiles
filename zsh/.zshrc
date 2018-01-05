@@ -71,8 +71,8 @@ alias reflector="sudo reflector --verbose \
                                 --sort rate \
                                 --save /etc/pacman.d/mirrorlist"
 
-alias pkg-list="comm -23 <(trizen -Qqt | sort) \
-                   <(trizen -Sqg base base-devel | sort) \
+alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
+                   <(pacaur -Sqg base base-devel | sort) \
                    > pkgs.lst"
 
 #---[tmux environment refresh]--------------------------------------------------

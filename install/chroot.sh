@@ -11,18 +11,12 @@ echo "127.0.1.1\tc137.localdomain\tc137" >> /etc/hosts
 
 systemctl enable dhcpcd
 
-#pacman -S --noconfirm grub
-#grub-install /dev/sda
-#sed -i '/GRUB_CMDLINE_LINUX_DEFAULT/ s/^\(.*\)\("\)/\1 video=1920x1080\2/' \
-#    /etc/default/grub
-#grub-mkconfig -o /boot/grub/grub.cfg
+pacman -S refind-efi intel-ucode
+bootctl --path=/boot install
 
 sed -i '/Color/s/^#//' /etc/pacman.conf
 sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf
 pacman -Syy
-
-#pacman -S --noconfirm virtualbox-guest-utils virtualbox-guest-modules-arch
-#systemctl enable vboxservice
 
 pacman -S --noconfirm git
 
@@ -30,5 +24,7 @@ passwd
 
 useradd -m -G wheel -s /bin/bash jeff
 passwd jeff
+
+echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 exit

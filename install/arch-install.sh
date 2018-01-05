@@ -2,19 +2,30 @@
 
 timedatectl set-ntp true
 
-parted /dev/sda mklabel msdos
-parted /dev/sda mkpart primary ext4 0% 16GiB
-parted /dev/sda mkpart primary linux-swap 16GiB 100%
+mount /dev/sda5 /mnt
+mount /dev/sda2 /mnt/boot
 
-mkfs.ext4 /dev/sda1
-mkswap /dev/sda2
-swapon /dev/sda2
+cd /mnt/boot
+rm vmlinuz-linux intel-ucode initramfs-linux.img initramfs-linux-fallback.img
+rm -rf loader EFI/refind EFI/systemd
+cd ..
+umount /mnt/boot
+rm -rf *
+cd ~
+umount /mnt
 
-mount /dev/sda1 /mnt
+mkfs.ext4 /dev/sda5
+mkswap /dev/sda6
+swapon /dev/sda6
+
+mount /dev/sda5 /mnt
+mkdir -p /mnt/boot
+mount /dev/sda2 /mnt/boot
+
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
-curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/virtualbox/install/chroot.sh
+curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/master/install/chroot.sh
 chmod +x chroot.sh
 
 cp chroot.sh /mnt/
