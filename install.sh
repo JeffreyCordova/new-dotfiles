@@ -7,7 +7,7 @@
 #                                
 
 sudo refind-install
-sudo cp -r refind/* /boot/
+sudo cp -r refind/EFI/* /boot/
 
 sudo pacman -S --noconfirm reflector
 sudo reflector --verbose --protocol https \
@@ -22,8 +22,8 @@ makepkg -sri
 cd ..
 rm -rf trizen
 
-pgp --recv-keys 1EB2638FF56C0C53
-pgp --recv-keys DBE7D3DD8C81D58D0A13D0E76BC26A17B9B7018A
+gpg --recv-keys 1EB2638FF56C0C53
+gpg --recv-keys DBE7D3DD8C81D58D0A13D0E76BC26A17B9B7018A
 
 sudo pacman -S --noconfirm $(cat deps/official.lst)
 trizen -S --needed --noconfirm $(cat deps/aur.lst)
