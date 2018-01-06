@@ -42,10 +42,8 @@ tmux
 tree
 ttf-droid
 ttf-roboto
-ttf-roboto-mono
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
-visual-studio-code-bin
 wget
 wmctrl
 xclip
