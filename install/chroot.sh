@@ -9,9 +9,7 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 echo c137 > /etc/hostname
 echo "127.0.1.1\tc137.localdomain\tc137" >> /etc/hosts
 
-systemctl enable dhcpcd
-
-pacman -S refind-efi intel-ucode wpa_supplicant
+pacman -S refind-efi intel-ucode wpa_supplicant dialog
 bootctl --path=/boot install
 
 sed -i '/Color/s/^#//' /etc/pacman.conf
