@@ -50,10 +50,6 @@ cursor-scroll = ns-resize
 inherit = bar/base
 monitor = DP-2
 
-[bar/secondary]
-inherit = bar/base
-monitor = DP-3
-
 [module/bspwm]
 type = internal/bspwm
 

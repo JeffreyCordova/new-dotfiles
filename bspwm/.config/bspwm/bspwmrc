@@ -48,12 +48,12 @@ bspc config external_rules_command "$HOME/.config/bspwm/external-rules"
 xsetroot -cursor_name left_ptr
 
 /usr/bin/lxpolkit &
-compton -b
+#compton -b
 feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
 
 dunst & 
 polybar primary &
-polybar secondary &
+#polybar secondary &
 
 tmuxd &
 

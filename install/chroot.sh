@@ -11,7 +11,7 @@ echo "127.0.1.1\tc137.localdomain\tc137" >> /etc/hosts
 
 systemctl enable dhcpcd
 
-pacman -S refind-efi intel-ucode
+pacman -S refind-efi intel-ucode wpa_supplicant
 bootctl --path=/boot install
 
 sed -i '/Color/s/^#//' /etc/pacman.conf

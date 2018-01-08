@@ -25,7 +25,7 @@ mount /dev/sda2 /mnt/boot
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
-curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/master/install/chroot.sh
+curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/laptop/install/chroot.sh
 chmod +x chroot.sh
 
 cp chroot.sh /mnt/

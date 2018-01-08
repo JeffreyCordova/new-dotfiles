@@ -10,7 +10,7 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 
 #---[plugins]-------------------------------------------------------------------
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
