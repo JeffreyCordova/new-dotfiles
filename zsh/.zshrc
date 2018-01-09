@@ -54,6 +54,8 @@ export KEYTIMEOUT=1
 alias l="ls -lah"
 alias grep="grep --color=auto"
 
+alias glances="glances --disable-bg"
+
 #---[PATH]
 alias path='printf "${PATH//:/\\n}\n"'
 

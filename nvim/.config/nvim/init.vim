@@ -61,8 +61,6 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " langs
 Plug 'tmhedberg/SimpylFold'
-Plug 'python-mode/python-mode'
-Plug 'othree/xml.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'julialang/julia-vim'
 
