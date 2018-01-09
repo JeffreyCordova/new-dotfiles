@@ -1,6 +1,5 @@
 bspwm
 cmake
-bspwm
 dex
 dunst
 evince
@@ -17,7 +16,9 @@ jq
 julia
 libx264
 lxsession
+ncdu
 neovim
+nmon
 nodejs
 npm
 otf-overpass
