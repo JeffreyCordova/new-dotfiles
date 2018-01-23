@@ -22,8 +22,9 @@ hide() {
 }
 
 get_geom() {
-    yoff=$(bspc config top_padding)
-    jqfmt='[.width, "x", .height, "+", .x, "+", .y + '$yoff']'
+    #yoff=$(bspc config top_padding)
+    #yoff=1
+    jqfmt='[.width, "x", .height, "+", .x, "+", .y + '1']'
 
     rect="$(bspc query -T -m | jq .rectangle)"
     echo "$rect" | jq -r "$jqfmt"' | map(tostring) | join("")'

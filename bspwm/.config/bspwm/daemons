@@ -7,7 +7,7 @@ mkdir -p "$(dirname $walldf)"
 distribute_desktops() {
     primary="0x00400002"
     #other="0x00400004"
-    bspc monitor $primary -d 1 2 3 9 10
+    bspc monitor $primary -d I II III IX X
     #bspc monitor $other -d 9 10
 }
 
