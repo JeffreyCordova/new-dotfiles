@@ -18,7 +18,7 @@ alert = #bd2c40
 
 [bar/base]
 width = 100%
-height = 30
+height = 25
 fixed-center = false
 
 background = ${colors.background}
@@ -26,9 +26,6 @@ foreground = ${colors.foreground}
 
 line-size = 3
 line-color = #f00
-
-border-size = 2
-border-color = #00000000
 
 padding-left = 0
 padding-right = 2
@@ -49,6 +46,7 @@ cursor-scroll = ns-resize
 [bar/primary]
 inherit = bar/base
 monitor = VGA-1
+bottom = true
 
 [module/bspwm]
 type = internal/bspwm

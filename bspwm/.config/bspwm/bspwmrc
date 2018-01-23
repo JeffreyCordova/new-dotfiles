@@ -7,7 +7,7 @@
 #           /_/                                   
 
 #---[config]--------------------------------------------------------------------
-bspc config top_padding 30
+bspc config bottom_padding 25
 bspc config border_width 2
 bspc config window_gap 5
 
@@ -58,4 +58,3 @@ polybar primary &
 tmuxd &
 
 dex -ae bspwm
-
