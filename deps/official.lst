@@ -3,6 +3,7 @@ bspwm
 cmake
 compton
 dex
+dia
 dunst
 evince
 feh
@@ -20,13 +21,16 @@ julia
 libx264
 lxsession
 mesa
+meson
+mpv
 neovim
+nmon
 nodejs
 npm
 ntfs-3g
 otf-overpass
 parted
-pcmanfm
+pcmanfm-gtk3
 psutils
 pulseaudio-alsa
 python2-neovim

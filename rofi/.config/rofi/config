@@ -23,7 +23,7 @@ rofi.line-margin:                    0
 rofi.line-padding:                   5
 rofi.separator-style:                none
 rofi.hide-scrollbar:                 true
-rofi.fake-transparency:              false
+rofi.fake-transparency:              true
 ! "Scrolling method. (0: Page, 1: Centered)" Set from: Default
 rofi.scroll-method:                  1
 ! hotkeys
@@ -32,3 +32,4 @@ rofi.kb-accept-entry:                Return
 rofi.kb-remove-to-eol:
 rofi.kb-row-up:                      Up,Control+k
 rofi.kb-row-down:                    Down,Control+j
+rofi.show-icons:                     true

@@ -18,7 +18,7 @@ alert = #bd2c40
 
 [bar/base]
 width = 100%
-height = 45
+height = 25
 fixed-center = false
 
 background = ${colors.background}
@@ -27,20 +27,17 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 2
-border-color = #00000000
-
 padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Overpass:size=16;2"
-font-1 = "FontAwesome:pixelsize=16;2"
+font-0 = "Overpass:size=12;2"
+font-1 = "HurmitNerdFontMono:pixelsize=16;2"
 
 modules-left = bspwm
-modules-center = 
+modules-center =
 modules-right = date
 
 cursor-click = pointer
@@ -49,22 +46,29 @@ cursor-scroll = ns-resize
 [bar/primary]
 inherit = bar/base
 monitor = eDP-1
+bottom = true
 
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %name%
+ws-icon-0 = term;
+ws-icon-1 = browser;
+ws-icon-2 = code;
+ws-icon-3 = spotify;
+ws-icon-4 = system;
+
+label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-padding = 2
 
-label-occupied = %name%
+label-occupied = %icon%
 label-occupied-padding = 2
 
-label-urgent = %name%!
+label-urgent = %icon%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %name%
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 

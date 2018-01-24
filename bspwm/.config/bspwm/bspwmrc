@@ -7,7 +7,8 @@
 #           /_/                                   
 
 #---[config]--------------------------------------------------------------------
-bspc config top_padding 45
+bspc config top_padding 1
+bspc config bottom_padding 25
 bspc config border_width 2
 bspc config window_gap 5
 
@@ -28,6 +29,7 @@ bspc rule -a '*' state=floating layer=normal
 
 bspc rule -a Dunst state=floating layer=above
 bspc rule -a Termuake state=floating layer=above sticky=on follow=on border=off
+bspc rule -a Steam state=fullscreen-
 
 #---[environment]---------------------------------------------------------------
 [ "$XDG_CURRENT_DESKTOP" = "KDE" ] || \
@@ -47,6 +49,9 @@ bspc config external_rules_command "$HOME/.config/bspwm/external-rules"
 
 xsetroot -cursor_name left_ptr
 
+xset s off
+xset dpms 0 0 0
+
 /usr/bin/lxpolkit &
 #compton -b
 feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
@@ -58,4 +63,3 @@ polybar primary &
 tmuxd &
 
 dex -ae bspwm
-
