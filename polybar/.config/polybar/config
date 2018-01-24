@@ -51,11 +51,11 @@ bottom = true
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = term;
-ws-icon-1 = browser;
-ws-icon-2 = code;
-ws-icon-3 = spotify;
-ws-icon-4 = system;
+ws-icon-0 = term;
+ws-icon-1 = browser;
+ws-icon-2 = code;
+ws-icon-3 = spotify;
+ws-icon-4 = system;
 
 label-focused = %icon%
 label-focused-background = ${colors.background-alt}
