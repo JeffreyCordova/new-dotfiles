@@ -2,7 +2,7 @@
 PATH="$HOME/.local/bin:$PATH"
 
 IGNORE="Termuake:Bspwm"
-MAXIMIZE="Termuxton:Code - Firefox"
+MAXIMIZE="Termuxton:Code:Firefox:Spotify"
 LEFT=""
 RIGHT=""
 
@@ -20,5 +20,5 @@ elif echo "$LEFT" | grep -q "$class"; then
 elif echo "$RIGHT" | grep -q "$class"; then
     printf "rectangle=%s\n" "$(grid --print -- "$wid" 0 6 12 6)"
 else
-    printf "rectangle=%s\n" "$(grid --print -- "$wid" 1 1 10 10)"
+    printf "rectangle=%s\n" "$(grid --print -- "$wid" 0 0 12 12)"
 fi

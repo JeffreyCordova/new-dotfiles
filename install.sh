@@ -31,8 +31,8 @@ trizen -S --needed --noconfirm $(cat deps/aur.lst)
 chsh -s /usr/bin/zsh
 
 # stow
-PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources rofi \
-    scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
+PKGS=( bspwm dunst firefox git gtk julia npm nvim polybar profile resources \
+    rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
 
 for pkg in "${PKGS[@]}"; do
     stow $pkg

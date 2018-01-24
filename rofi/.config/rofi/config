@@ -1,8 +1,8 @@
-!rofi.fullscreen:                     true
+!rofi.fullscreen:                    true
 rofi.width:                          50
 rofi.lines:                          12
 rofi.padding:                        10
-rofi.font:                           Overpass 14
+rofi.font:                           Liberation Mono 14
 rofi.monitor:                        -1
 ! State:                             BG        FG      BGalt     HLBG      HLFg
 rofi.color-normal:                   #00000000,#aabbbc,#00000000,#c0000000,#dedede
@@ -32,3 +32,4 @@ rofi.kb-accept-entry:                Return
 rofi.kb-remove-to-eol:
 rofi.kb-row-up:                      Up,Control+k
 rofi.kb-row-down:                    Down,Control+j
+rofi.show-icons:                     true

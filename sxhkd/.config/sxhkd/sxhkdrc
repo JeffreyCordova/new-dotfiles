@@ -13,7 +13,7 @@ super + shift + Return
     termuxton
 
 super + space
-    rofi-helper
+    rofi -modi "drun,window" -show drun
 
 super + t
     termite
@@ -76,7 +76,7 @@ super + {_,shift + } w
 
 # focus/send to the given desktop
 super + {_,shift + }{1-3,9,0}
-    bspc {desktop -f,node -d} {I,II,III,IX,X}
+    bspc {desktop -f,node -d} {term,browser,code,spotify,system}
 
 # focus/send to last desktop
 super + {_,shift + } Tab

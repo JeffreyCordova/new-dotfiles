@@ -1,6 +1,8 @@
+alsa-utils
 bspwm
 cmake
 dex
+dia
 dunst
 evince
 feh
@@ -16,13 +18,15 @@ jq
 julia
 libx264
 lxsession
+meson
+mpv
 ncdu
 neovim
 nmon
 nodejs
 npm
 otf-overpass
-pcmanfm
+pcmanfm-gtk3
 python2-neovim
 python-click
 python-gobject
@@ -32,8 +36,10 @@ python-virtualenvwrapper
 python-xdg
 qbittorrent
 qt5ct
+racket
 ripgrep
 rofi
+rust
 stow
 sxhkd
 termite
@@ -45,6 +51,7 @@ ttf-droid
 ttf-roboto
 virtualbox-guest-utils
 virtualbox-guest-modules-arch
+vlc
 wget
 wmctrl
 xclip
