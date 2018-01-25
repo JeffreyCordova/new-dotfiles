@@ -1,9 +1,9 @@
 #!/bin/sh
 PATH="$HOME/.local/bin:$PATH"
 
-IGNORE="Termuake:Bspwm"
-MAXIMIZE="Termuxton:Code:Firefox:Spotify"
-LEFT=""
+IGNORE="Bspwm"
+MAXIMIZE="Code - Firefox:Spotify"
+LEFT="Dia"
 RIGHT=""
 
 wid="$1"

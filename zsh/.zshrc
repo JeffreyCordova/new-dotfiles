@@ -68,31 +68,9 @@ alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
                     <(pacaur -Sqg base base-devel | sort) \
                     > pkgs.lst"
 
-#---[tmux]
-alias tmuxk="tmux kill-session -t"
-alias tmuxl="tmux list-session -F #S"
-alias tmuxn="tmuxd -n"
-alias tmuxa="tmuxd -a"
-
 #---[applications]
 alias glances="glances --disable-bg"
 alias dia="dia --integrated"
-
-#---[tmux environment refresh]--------------------------------------------------
-
-if [ -n "$TMUX" ]; then
-    function tmux_refresh_env() {
-        eval $(tmux show-environment -s)
-    }
-else
-    function tmux_refresh_env() {
-        true
-    }
-fi
-
-function preexec() {
-    tmux_refresh_env
-}
 
 #---[even-better-ls]------------------------------------------------------------
 

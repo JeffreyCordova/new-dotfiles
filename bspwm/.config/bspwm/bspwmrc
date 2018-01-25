@@ -28,7 +28,6 @@ bspc config pointer_modifier mod4
 bspc rule -a '*' state=floating layer=normal
 
 bspc rule -a Dunst state=floating layer=above
-bspc rule -a Termuake state=floating layer=above sticky=on follow=on border=off
 
 bspc rule -a Firefox desktop=browser
 bspc rule -a Code desktop=code
@@ -46,7 +45,6 @@ sxhkd &
 . "$HOME/.config/bspwm/daemons"
 bspwm_mntrd
 bspwm_walld
-bspwm_termuaked
 
 bspc config external_rules_command "$HOME/.config/bspwm/external-rules"
 
@@ -59,7 +57,5 @@ feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
 dunst & 
 polybar primary &
 #polybar secondary &
-
-tmuxd &
 
 dex -ae bspwm

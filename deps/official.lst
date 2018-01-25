@@ -36,16 +36,13 @@ python-virtualenvwrapper
 python-xdg
 qbittorrent
 qt5ct
-racket
 ripgrep
 rofi
-rust
 stow
 sxhkd
 termite
 texlive-science
 texstudio
-tmux
 tree
 ttf-droid
 ttf-roboto

@@ -7,16 +7,10 @@
 
 # Application Shortcuts
 super + Return
-    termuake
-
-super + shift + Return
-    termuxton
+    termite
 
 super + space
     rofi -modi "drun,window" -show drun
-
-super + t
-    termite
 
 super + e
     pcmanfm

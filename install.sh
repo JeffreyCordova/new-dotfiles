@@ -32,7 +32,7 @@ chsh -s /usr/bin/zsh
 
 # stow
 PKGS=( bspwm dunst firefox git gtk julia npm nvim polybar profile resources \
-    rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
+    rofi scripts sxhkd templates termite vscode xorg xwinmosaic zsh )
 
 for pkg in "${PKGS[@]}"; do
     stow $pkg

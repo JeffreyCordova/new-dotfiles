@@ -49,13 +49,3 @@ bspwm_walld() {
         fi
     done &
 }
-
-bspwm_termuaked() {
-    bspc subscribe node_focus | while read evt _ _ id; do
-        wclass=$(xprop -id "$id" WM_CLASS | cut -d\" -f4)
-        if [ "$wclass" != "Termuake" ]; then
-            wmctrl -r "Termuake" -b add,hidden
-            break;
-        fi
-    done &
-}

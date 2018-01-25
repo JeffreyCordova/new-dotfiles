@@ -54,7 +54,6 @@ Plug 'tpope/vim-fugitive'
 
 " misc
 Plug 'troydm/zoomwintab.vim'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'kshenoy/vim-signature'
 Plug 'wesQ3/vim-windowswap'
 Plug 'godlygeek/tabular'
