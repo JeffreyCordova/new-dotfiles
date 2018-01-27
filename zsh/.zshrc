@@ -61,12 +61,12 @@ alias path='printf "${PATH//:/\\n}\n"'
 alias shutdown="shutdown -h now"
 alias reflector="sudo reflector --verbose \
                                 --protocol https \
-                                -l 200 \
+                                --latest 200 \
                                 --sort rate \
                                 --save /etc/pacman.d/mirrorlist"
 alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
-                    <(pacaur -Sqg base base-devel | sort) \
-                    > pkgs.lst"
+                         <(pacaur -Sqg base base-devel | sort) \
+                         > pkgs.lst"
 
 #---[tmux]
 alias tmuxk="tmux kill-session -t"
