@@ -34,7 +34,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "Overpass:size=12;2"
-font-1 = "HurmitNerdFontMono:pixelsize=16;2"
+font-1 = "HurmitNerdFontMono:pixelsize=20;4"
 
 modules-left = bspwm
 modules-center =
@@ -52,10 +52,11 @@ bottom = true
 type = internal/bspwm
 
 ws-icon-0 = term;
-ws-icon-1 = browser;
-ws-icon-2 = code;
-ws-icon-3 = spotify;
-ws-icon-4 = system;
+ws-icon-1 = code;
+ws-icon-2 = steam;
+ws-icon-3 = browser;
+ws-icon-4 = spotify;
+ws-icon-5 = system;
 
 label-focused = %icon%
 label-focused-background = ${colors.background-alt}

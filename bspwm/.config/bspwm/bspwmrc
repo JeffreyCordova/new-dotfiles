@@ -29,7 +29,11 @@ bspc rule -a '*' state=floating layer=normal
 
 bspc rule -a Dunst state=floating layer=above
 bspc rule -a Termuake state=floating layer=above sticky=on follow=on border=off
-bspc rule -a Steam state=fullscreen-
+
+bspc rule -a Code desktop=code
+bspc rule -a Steam desktop=steam state=fullscreen-
+bspc rule -a Firefox desktop=browser
+bspc rule -a Spotify desktop=spotify
 
 #---[environment]---------------------------------------------------------------
 [ "$XDG_CURRENT_DESKTOP" = "KDE" ] || \
@@ -63,3 +67,4 @@ polybar primary &
 tmuxd &
 
 dex -ae bspwm
+
