@@ -34,7 +34,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "Overpass:size=10;2"
-font-1 = "HurmitNerdFontMono:pixelsize=11;2"
+font-1 = "HurmitNerdFontMono:pixelsize=18;4"
 
 modules-left = bspwm
 modules-center =
