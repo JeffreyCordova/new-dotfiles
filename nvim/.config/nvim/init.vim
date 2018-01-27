@@ -38,6 +38,7 @@ Plug 'scrooloose/nerdcommenter'
 " automatic parentheses
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'bhurlow/vim-arinfer'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
@@ -61,8 +62,6 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " langs
 Plug 'tmhedberg/SimpylFold'
-Plug 'python-mode/python-mode'
-Plug 'othree/xml.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'julialang/julia-vim'
 

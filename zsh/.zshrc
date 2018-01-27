@@ -10,7 +10,7 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 
 #---[plugins]-------------------------------------------------------------------
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -57,23 +57,26 @@ alias grep="grep --color=auto"
 #---[PATH]
 alias path='printf "${PATH//:/\\n}\n"'
 
+#---[system]
+alias shutdown="shutdown -h now"
+alias reflector="sudo reflector --verbose \
+                                --protocol https \
+                                --latest 200 \
+                                --sort rate \
+                                --save /etc/pacman.d/mirrorlist"
+alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
+                         <(pacaur -Sqg base base-devel | sort) \
+                         > pkgs.lst"
+
 #---[tmux]
 alias tmuxk="tmux kill-session -t"
 alias tmuxl="tmux list-session -F #S"
 alias tmuxn="tmuxd -n"
 alias tmuxa="tmuxd -a"
 
-alias shutdown="shutdown -h now"
-
-alias reflector="sudo reflector --verbose \
-                                --protocol https \
-                                -l 200 \
-                                --sort rate \
-                                --save /etc/pacman.d/mirrorlist"
-
-alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
-                   <(pacaur -Sqg base base-devel | sort) \
-                   > pkgs.lst"
+#---[applications]
+alias glances="glances --disable-bg"
+alias dia="dia --integrated"
 
 #---[tmux environment refresh]--------------------------------------------------
 
@@ -90,6 +93,8 @@ fi
 function preexec() {
     tmux_refresh_env
 }
+
+#---[even-better-ls]-------------------------------------------------------------
 
 LS_COLORS=$(ls_colors_generator)
 
