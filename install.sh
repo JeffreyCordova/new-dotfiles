@@ -15,7 +15,7 @@ sudo pacman -Syy
 
 git clone https://aur.archlinux.org/trizen
 cd trizen
-makepkg -sri
+makepkg -sri --noconfirm
 cd ..
 rm -rf trizen
 
