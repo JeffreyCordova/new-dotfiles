@@ -6,9 +6,6 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-sudo pacman -S virtualbox-guest-utils virtualbox-guest-modules-arch
-sudo systemctl enable vboxservice
-
 sudo pacman -S --noconfirm reflector
 sudo reflector --verbose --protocol https \
                          -l 200 \
@@ -31,7 +28,7 @@ trizen -S --needed --noconfirm $(cat deps/aur.lst)
 chsh -s /usr/bin/zsh
 
 # stow
-PKGS=( bspwm dunst firefox git gtk julia npm nvim polybar profile resources \
+PKGS=( bspwm dunst git gtk julia npm nvim polybar profile resources \
     rofi scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
 
 for pkg in "${PKGS[@]}"; do

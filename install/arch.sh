@@ -11,6 +11,12 @@ mkswap /dev/sda2
 swapon /dev/sda2
 
 mount /dev/sda1 /mnt
+
+pacman -Syy
+pacman -S --noconfirm reflector
+reflector --verbose --protocol https --latest 200 --sort rate --save /etc/pacman.d/mirrorlist
+pacman -Syy
+
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
