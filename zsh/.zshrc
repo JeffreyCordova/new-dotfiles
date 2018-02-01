@@ -50,7 +50,7 @@ bindkey -M vicmd 'K' run-help
 export KEYTIMEOUT=1
 
 #---[aliases]-------------------------------------------------------------------
-#alias ls="ls --color=auto"
+alias ls="ls --color=auto"
 alias l="ls -lah"
 alias grep="grep --color=auto"
 
@@ -96,23 +96,23 @@ function preexec() {
 
 #---[even-better-ls]------------------------------------------------------------
 
-LS_COLORS=$(ls_colors_generator)
+#LS_COLORS=$(ls_colors_generator)
 
-run_ls() {
-    ls-i --color=auto -w $(tput cols) "$@"
-}
+#run_ls() {
+#    ls-i --color=auto -w $(tput cols) "$@"
+#}
 
-run_dir() {
-    dir-i --color=auto -w $(tput cols) "$@"
-}
+#run_dir() {
+#    dir-i --color=auto -w $(tput cols) "$@"
+#}
 
-run_vdir() {
-    vdir-i --color=auto -w $(tput cols) "$@"
-}
+#run_vdir() {
+#    vdir-i --color=auto -w $(tput cols) "$@"
+#}
 
-alias ls="run_ls"
-alias dir="run_dir"
-alias vdir="run_vdir"
+#alias ls="run_ls"
+#alias dir="run_dir"
+#alias vdir="run_vdir"
 
 #---[spaceship theme settings]--------------------------------------------------
 

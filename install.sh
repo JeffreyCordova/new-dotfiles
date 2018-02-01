@@ -37,5 +37,5 @@ done
 
 sudo npm install -g neovim
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"
-rm -rf coreutils-8.2
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/illinoisjackson/even-better-ls/master/install.sh)"
+#rm -rf coreutils-8.2
