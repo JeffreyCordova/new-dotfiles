@@ -135,5 +135,15 @@
     "workbench.colorTheme": "One Dark Pro",
     "python.venvPath": "~/.virtualenvs",
     "material-icon-theme.showUpdateMessage": false,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
 }

@@ -86,3 +86,7 @@ super + {_,shift + } Tab
 super + d: {h,j,k,l}
     bspc desktop -f {prev,next,prev,next}
 
+# exit bspwm
+super + alt + Escape
+    bspc quit
+

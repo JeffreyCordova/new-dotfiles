@@ -2,7 +2,7 @@
 PATH="$HOME/.local/bin:$PATH"
 
 IGNORE="Termuake:Bspwm"
-MAXIMIZE="Termuxton:Code"
+MAXIMIZE="Termuxton:Code - Firefox:Spotify"
 LEFT=""
 RIGHT=""
 

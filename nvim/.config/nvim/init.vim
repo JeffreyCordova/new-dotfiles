@@ -38,7 +38,7 @@ Plug 'scrooloose/nerdcommenter'
 " automatic parentheses
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-Plug 'bhurlow/vim-arinfer'
+Plug 'bhurlow/vim-parinfer'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}

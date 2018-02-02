@@ -22,6 +22,10 @@ mount /dev/sda5 /mnt
 mkdir -p /mnt/boot
 mount /dev/sda2 /mnt/boot
 
+pacman -Syy
+pacman -S --noconfirm reflector
+reflector --verbose --protocol https --latest 200 --sort rate --save /etc/pacman.d/mirrorlist
+
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 

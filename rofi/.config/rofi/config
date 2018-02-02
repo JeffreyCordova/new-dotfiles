@@ -32,3 +32,4 @@ rofi.kb-accept-entry:                Return
 rofi.kb-remove-to-eol:
 rofi.kb-row-up:                      Up,Control+k
 rofi.kb-row-down:                    Down,Control+j
+rofi.show-icons:                     true
