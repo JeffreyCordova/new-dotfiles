@@ -76,7 +76,7 @@
         }
     ],
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "terminal.external.linuxExec": "termite",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "underline",
@@ -132,6 +132,7 @@
     "python.promptToInstallJupyter": false,
     "python.jediPath": "/usr/lib/python3.6/site-packages/",
     "arduino.path": "/usr/share/arduino",
+    "workbench.colorTheme": "One Dark Pro",
     "python.venvPath": "~/.virtualenvs",
     "material-icon-theme.showUpdateMessage": false,
     "workbench.startupEditor": "none",

@@ -18,6 +18,7 @@ jq
 julia
 libx264
 lxsession
+mesa
 meson
 mpv
 ncdu
@@ -27,6 +28,8 @@ nodejs
 npm
 otf-overpass
 pcmanfm-gtk3
+psutils
+pulseaudio-alsa
 python2-neovim
 python-click
 python-gobject
@@ -35,6 +38,7 @@ python-pylint
 python-virtualenvwrapper
 python-xdg
 qbittorrent
+qt5-styleplugins
 qt5ct
 racket
 ripgrep
@@ -56,6 +60,7 @@ xclip
 xdg-utils
 xorg-server
 xorg-xinit
+xorg-xinput
 xorg-xsetroot
 xorg-xprop
 zsh

@@ -7,7 +7,7 @@ mkdir -p "$(dirname $walldf)"
 distribute_desktops() {
     primary="0x00400002"
     #other="0x00400004"
-    bspc monitor $primary -d term browser code spotify system
+    bspc monitor $primary -d term code steam browser code spotify system
     #bspc monitor $other -d 9 10
 }
 
