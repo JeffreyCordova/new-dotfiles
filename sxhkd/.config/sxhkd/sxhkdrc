@@ -13,7 +13,7 @@ super + shift + Return
     termuxton
 
 super + space
-    rofi -modi "drun,window" -show drun
+    rofi -modi "drun" -show drun
 
 super + t
     termite

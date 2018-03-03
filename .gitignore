@@ -15,3 +15,5 @@ vscode/.config/Code/Preferences
 vscode/.config/Code/logs
 vscode/.config/Code/machineid
 vscode/.config/Code/storage.json
+
+termite/.local/share/applications/

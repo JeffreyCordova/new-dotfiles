@@ -1,5 +1,7 @@
 {
     "julia.executablePath": "/usr/bin/julia",
+    "editor.fontFamily": "'Hermit', 'Overpass'",
+    "editor.fontSize": 12,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": false,
