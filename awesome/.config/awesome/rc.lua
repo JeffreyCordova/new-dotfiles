@@ -355,6 +355,8 @@ clientkeys = gears.table.join(
               {description = "close", group = "client"}),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),
+    awful.key({ modkey, "Control" }, "t",      awful.titlebar.toggle                            ,
+              {description = "toggle title bar", group = "client"}),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
@@ -494,7 +496,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = false }
+      }, properties = { titlebars_enabled = true }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
@@ -558,6 +560,11 @@ client.connect_signal("request::titlebars", function(c)
         },
         layout = wibox.layout.align.horizontal
     }
+    -- Hide the title bar if not floating
+    local l = awful.layout.get(c.screen)
+    if not (l.name == "floating" or c.floating) then
+        awful.titlebar.hide(c)
+    end
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
