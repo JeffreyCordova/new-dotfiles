@@ -6,9 +6,11 @@
 #                             
 
 #---[zplug loading]-------------------------------------------------------------
+
 source /usr/share/zsh/scripts/zplug/init.zsh
 
 #---[plugins]-------------------------------------------------------------------
+
 zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug "zdharma/fast-syntax-highlighting", defer:2
 
@@ -21,14 +23,8 @@ fi
 
 zplug load
 
-#---[no history duplicates]-----------------------------------------------------
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
-setopt EXTENDED_HISTORY
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_IGNORE_SPACE
-
 #---[case-insensitive completion]-----------------------------------------------
+
 zstyle ':completion:*' menu select=2
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
@@ -50,77 +46,42 @@ bindkey -M vicmd 'K' run-help
 export KEYTIMEOUT=1
 
 #---[aliases]-------------------------------------------------------------------
-#alias ls="ls --color=auto"
+
+alias ls="ls --color=auto"
 alias l="ls -lah"
 alias grep="grep --color=auto"
 
 #---[PATH]
+
 alias path='printf "${PATH//:/\\n}\n"'
 
 #---[system]
+
 alias shutdown="shutdown -h now"
 alias reflector="sudo reflector --verbose \
                                 --protocol https \
                                 --latest 200 \
                                 --sort rate \
                                 --save /etc/pacman.d/mirrorlist"
-alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
-                         <(pacaur -Sqg base base-devel | sort) \
-                         > pkgs.lst"
-
-#---[tmux]
-alias tmuxk="tmux kill-session -t"
-alias tmuxl="tmux list-session -F #S"
-alias tmuxn="tmuxd -n"
-alias tmuxa="tmuxd -a"
+#alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
+#                         <(pacaur -Sqg base base-devel | sort) \
+#                         > pkgs.lst"
 
 #---[applications]
+
 alias glances="glances --disable-bg"
-alias dia="dia --integrated"
-
-#---[tmux environment refresh]--------------------------------------------------
-
-if [ -n "$TMUX" ]; then
-    function tmux_refresh_env() {
-        eval $(tmux show-environment -s)
-    }
-else
-    function tmux_refresh_env() {
-        true
-    }
-fi
-
-function preexec() {
-    tmux_refresh_env
-}
-
-#---[even-better-ls]-------------------------------------------------------------
-
-LS_COLORS=$(ls_colors_generator)
-
-run_ls() {
-    ls-i --color=auto -w $(tput cols) "$@"
-}
-
-run_dir() {
-    dir-i --color=auto -w $(tput cols) "$@"
-}
-
-run_vdir() {
-    vdir-i --color=auto -w $(tput cols) "$@"
-}
-
-alias ls="run_ls"
-alias dir="run_dir"
-alias vdir="run_vdir"
+#alias dia="dia --integrated"
 
 #---[spaceship theme settings]--------------------------------------------------
 
 #---[directory]
+
 SPACESHIP_DIR_TRUNC=0
 
 #---[battery]
+
 #SPACESHIP_BATTERY_SHOW=false
 
 #---[vi mode]
+
 spaceship_vi_mode_enable
