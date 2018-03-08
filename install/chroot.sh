@@ -9,8 +9,12 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 echo c137 > /etc/hostname
 echo "127.0.1.1\tc137.localdomain\tc137" >> /etc/hosts
 
-pacman -S refind-efi intel-ucode wpa_supplicant dialog
+pacman -S --noconfirm refind-efi intel-ucode wpa_supplicant dialog
 bootctl --path=/boot install
+curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/laptop/refind/loader/loader.conf
+curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/laptop/refind/loader/entries/arch.conf
+mv loader.conf /boot/loader/
+mv arch.conf /boot/loader/entries/
 
 sed -i '/Color/s/^#//' /etc/pacman.conf
 sed -i '/\[multilib\]/,+1 s/^#//' /etc/pacman.conf

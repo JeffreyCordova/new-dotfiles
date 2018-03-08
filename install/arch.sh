@@ -1,12 +1,19 @@
 #!/bin/sh
 
-timedatectl set-ntp true
+pacman -Syy
+pacman -S --noconfirm reflector
+reflector --verbose \
+          --protocol https \
+          --latest 200 \
+          --sort rate \
+          --save /etc/pacman.d/mirrorlist
+pacman -Syy
 
-mount /dev/sda5 /mnt
+mount /dev/sda6 /mnt
 mount /dev/sda2 /mnt/boot
 
 cd /mnt/boot
-rm vmlinuz-linux intel-ucode initramfs-linux.img initramfs-linux-fallback.img
+rm refind_linux.conf vmlinuz-linux intel-ucode.img initramfs-linux.img initramfs-linux-fallback.img
 rm -rf loader EFI/refind EFI/systemd
 cd ..
 umount /mnt/boot
@@ -14,11 +21,11 @@ rm -rf *
 cd ~
 umount /mnt
 
-mkfs.ext4 /dev/sda5
-mkswap /dev/sda6
-swapon /dev/sda6
+mkfs.ext4 /dev/sda6
+mkswap /dev/sda7
+swapon /dev/sda7
 
-mount /dev/sda5 /mnt
+mount /dev/sda6 /mnt
 mkdir -p /mnt/boot
 mount /dev/sda2 /mnt/boot
 
