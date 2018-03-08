@@ -7,8 +7,7 @@
 #           /_/                                   
 
 #---[config]--------------------------------------------------------------------
-bspc config top_padding 1
-bspc config bottom_padding 25
+bspc config top_padding 25
 bspc config border_width 2
 bspc config window_gap 5
 
@@ -30,10 +29,6 @@ bspc rule -a '*' state=floating layer=normal
 bspc rule -a Dunst state=floating layer=above
 bspc rule -a Termuake state=floating layer=above sticky=on follow=on border=off
 
-bspc rule -a Firefox desktop=browser
-bspc rule -a Code desktop=code
-bspc rule -a Spotify desktop=spotify
-
 #---[environment]---------------------------------------------------------------
 [ "$XDG_CURRENT_DESKTOP" = "KDE" ] || \
 [ "$XDG_CURRENT_DESKTOP" = "GNOME" ] || \
@@ -52,9 +47,13 @@ bspc config external_rules_command "$HOME/.config/bspwm/external-rules"
 
 xsetroot -cursor_name left_ptr
 
+#L xset s off
+#L xset dpms 0 0 0
+
 /usr/bin/lxpolkit &
 compton -b
-feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
+feh --no-fehbg --bg-fill "$HOME/.local/share/overwatch/mccree.png" \
+                         "$HOME/.local/share/overwatch/tracer.png"
 
 dunst & 
 polybar primary &

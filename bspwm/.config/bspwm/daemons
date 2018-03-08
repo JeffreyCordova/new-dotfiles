@@ -7,8 +7,9 @@ mkdir -p "$(dirname $walldf)"
 distribute_desktops() {
     primary="0x00400002"
     other="0x00400004"
-    bspc monitor $primary -d term code steam
-    bspc monitor $other -d browser spotify system
+    #LV bspc monitor $primary -d 1 2 3 4 5 6 7 8 9 0
+    bspc monitor $primary -d 1 2 3 4 5
+    bspc monitor $other -d 6 7 8 9 0
 }
 
 count_windows() {

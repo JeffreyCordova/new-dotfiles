@@ -33,7 +33,6 @@ zstyle ':completion:*' menu select=2
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 #---[vi mode]-------------------------------------------------------------------
-
 bindkey -v
 bindkey '^P' up-history
 bindkey '^N' down-history
@@ -79,7 +78,6 @@ alias glances="glances --disable-bg"
 alias dia="dia --integrated"
 
 #---[tmux environment refresh]--------------------------------------------------
-
 if [ -n "$TMUX" ]; then
     function tmux_refresh_env() {
         eval $(tmux show-environment -s)
@@ -95,7 +93,6 @@ function preexec() {
 }
 
 #---[even-better-ls]------------------------------------------------------------
-
 #LS_COLORS=$(ls_colors_generator)
 
 #run_ls() {
@@ -115,7 +112,6 @@ function preexec() {
 #alias vdir="run_vdir"
 
 #---[spaceship theme settings]--------------------------------------------------
-
 #---[directory]
 SPACESHIP_DIR_TRUNC=0
 

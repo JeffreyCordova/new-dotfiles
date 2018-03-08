@@ -3,6 +3,7 @@
 [user]
     name = Jeffrey Cordova
     email = jeffcordova@protonmail.com
+
 [push]
     default = simple
 [merge]
@@ -10,9 +11,15 @@
     ff = only
 [mergetool]
     prompt = false
-[mergetool "vimdiff"]
+[mergetool "nvimdiff"]
     cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED \
                -c '$wincmd w' -c 'wincmd J'
+[diff]
+    prompt = false
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = nvim -d $LOCAL $REMOTE
+
 [color]
     ui = auto
 [color "diff"]
@@ -43,11 +50,6 @@
     help = magenta bold
     error = red bold
 
-[diff]
-    prompt = true
-    tool = nvimdiff
-[difftool "nvimdiff"]
-    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [alias]
     a = add
     c = commit
