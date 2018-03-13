@@ -1,14 +1,5 @@
 #!/bin/sh
 
-pacman -Syy
-pacman -S --noconfirm reflector
-reflector --verbose \
-          --protocol https \
-          --latest 200 \
-          --sort rate \
-          --save /etc/pacman.d/mirrorlist
-pacman -Syy
-
 mount /dev/sda6 /mnt
 mount /dev/sda2 /mnt/boot
 
@@ -29,7 +20,15 @@ mount /dev/sda6 /mnt
 mkdir -p /mnt/boot
 mount /dev/sda2 /mnt/boot
 
-pacstrap -i /mnt base base-devel
+pacman -Syy --noconfirm reflector
+reflector --verbose \
+          --protocol https \
+          --latest 200 \
+          --sort rate \
+          --save /etc/pacman.d/mirrorlist
+pacman -Syy
+
+pacstrap /mnt base{,-devel}
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
 curl -O https://raw.githubusercontent.com/JeffreyCordova/dotfiles/laptop/install/chroot.sh
@@ -37,4 +36,3 @@ chmod +x chroot.sh
 
 cp chroot.sh /mnt/
 arch-chroot /mnt ./chroot.sh
-rm chroot.sh /mnt/chroot.sh
