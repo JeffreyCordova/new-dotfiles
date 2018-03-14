@@ -6,12 +6,9 @@
 # /_/_/ /_/____/\__/\__,_/_/_/   
 #                                
 
-platform=$1
-opt=$2
-
 BASE_PKGS=( git gtk julia npm nvim profile resources rofi scripts \
     templates termite tmux vscode zsh )
-BSPWM_PKGS=( bspwm polybar xwinmosaic )
+BSPWM_PKGS=( bspwm )
 XMONAD_PKGS=( xmonad )
 
 function refind_install() {
