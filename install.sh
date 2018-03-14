@@ -13,10 +13,10 @@ XMONAD_PKGS=( xmonad )
 
 function refind_install() {
     sudo refind-install
-    sudo cp -r refind/EFI/* /boot/
+    sudo cp -r refind/EFI/refind /boot/EFI/
 }
 
-function reflector() {
+function run_reflector() {
     sudo pacman -S --noconfirm reflector
     sudo reflector --verbose \
                    --protocol https \
@@ -40,15 +40,17 @@ function add_pgp_keys() {
 }
 
 function base_install() {
-
+    trizen -S --needed --noconfirm $(cat deps/base.deps)
+    
+    for pkg in "${BASE_PKGS[@]}"; do
+        stow $pkg
+    done
 }
-trizen -S --needed --noconfirm $(cat deps/base.deps)
 
-PKGS=( bspwm compton dunst git gtk julia npm nvim polybar profile resources rofi \
-    scripts sxhkd templates termite tmux vscode xorg xwinmosaic zsh )
+#refind_install
+#run_reflector
+trizen_install
+#add_pgp_keys
+base_install
 
-for pkg in "${PKGS[@]}"; do
-    stow $pkg
-done
-
-sudo npm install -g neovim
+#sudo npm install -g neovim
