@@ -41,8 +41,9 @@ xset dpms 0 0 0
 
 xsetroot -cursor_name left_ptr
 
-compton -b
+#compton -b
 
 feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
 
-exec xmonad
+#exec xmonad
+exec awesome
