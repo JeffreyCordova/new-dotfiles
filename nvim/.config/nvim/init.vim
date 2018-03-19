@@ -59,10 +59,11 @@ Plug 'wesQ3/vim-windowswap'
 Plug 'godlygeek/tabular'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
-" langs
+" languages
 Plug 'tmhedberg/SimpylFold'
 Plug 'pangloss/vim-javascript'
 Plug 'julialang/julia-vim'
+Plug 'neovimhaskell/haskell-vim'
 
 call plug#end()
 

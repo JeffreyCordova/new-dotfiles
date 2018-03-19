@@ -34,8 +34,6 @@ fi
 
 PATH="$HOME/.local/bin:$PATH"
 
-export GDK_DPI_SCALE=1.3
-
 xset s off
 xset dpms 0 0 0
 

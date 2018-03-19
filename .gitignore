@@ -15,4 +15,8 @@ vscode/.config/Code/Preferences
 vscode/.config/Code/logs
 vscode/.config/Code/machineid
 vscode/.config/Code/storage.json
+
 xmonad/.xmonad/xmonad.errors
+xmonad/.xmonad/xmonad.hi
+xmonad/.xmonad/xmonad.o
+xmonad/.xmonad/xmonad-x86_64-linux

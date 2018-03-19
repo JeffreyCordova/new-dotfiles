@@ -1,6 +1,8 @@
 import XMonad
 import XMonad.Config.Desktop
 import XMonad.Layout.Spacing
+import XMonad.Layout.Tabbed
+import XMonad.Util.EZConfig (additionalKeys)
 
 baseConfig = desktopConfig
 
