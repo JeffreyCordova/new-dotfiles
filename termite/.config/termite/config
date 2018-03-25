@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = false
 clickable_url = true
-font = Hermit 9
+font = Hermit 8
 scrollback_lines = 10000
 search_wrap = true
 icon_name = terminal
@@ -35,7 +35,7 @@ filter_unmatched_urls = true
 #cursor = #dcdccc
 foreground = #d7d0c7
 foreground_bold = #d7d0c7
-background = #101010
+background = #000000
 
 color0 = #101010
 color8 = #404040

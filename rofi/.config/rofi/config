@@ -1,8 +1,8 @@
 !rofi.fullscreen:                     true
-rofi.width:                          50
+rofi.width:                          45
 rofi.lines:                          12
 rofi.padding:                        10
-rofi.font:                           Overpass 18
+rofi.font:                           Overpass 17
 rofi.monitor:                        -1
 ! State:                             BG        FG      BGalt     HLBG      HLFg
 rofi.color-normal:                   #00000000,#aabbbc,#00000000,#c0000000,#dedede

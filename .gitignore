@@ -3,6 +3,8 @@ pkgs.lst
 nvim/.config/nvim/autoload
 nvim/.config/nvim/plugged
 
+ranger/.config/ranger/.rc.conf
+
 vscode/.config/Code/Backups
 vscode/.config/Code/Cache
 vscode/.config/Code/CachedData
