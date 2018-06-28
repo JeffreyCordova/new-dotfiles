@@ -7,11 +7,11 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = false
 clickable_url = true
-font = Hermit 8
+font = HurmitNerdFontMono 8
 scrollback_lines = 10000
 search_wrap = true
 icon_name = terminal
-#geometry = 1280x768
+geometry = 1280x768
 
 # "system", "on" or "off"
 cursor_blink = system

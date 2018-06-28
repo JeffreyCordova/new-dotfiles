@@ -71,6 +71,7 @@ alias reflector="sudo reflector --verbose \
 
 alias glances="glances --disable-bg"
 #alias dia="dia --integrated"
+alias firepox="firefox --private-window"
 
 #---[spaceship theme settings]--------------------------------------------------
 

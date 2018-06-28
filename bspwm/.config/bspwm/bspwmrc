@@ -30,15 +30,14 @@ bspc rule -a '*' state=floating layer=normal
 bspc rule -a Dunst state=floating layer=above
 bspc rule -a Termuake state=floating layer=above sticky=on follow=on border=off
 
-bspc rule -a Code desktop=code
-bspc rule -a Steam desktop=steam state=fullscreen-
-bspc rule -a Firefox desktop=browser
-bspc rule -a Spotify desktop=spotify
+bspc rule -a Steam state=fullscreen-
 
 #---[environment]---------------------------------------------------------------
 [ "$XDG_CURRENT_DESKTOP" = "KDE" ] || \
 [ "$XDG_CURRENT_DESKTOP" = "GNOME" ] || \
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
+export GDK_DPI_SCALE=1.37
 
 #---[autostart]-----------------------------------------------------------------
 PATH="$HOME/.local/bin:$PATH"
@@ -57,7 +56,7 @@ xset s off
 xset dpms 0 0 0
 
 /usr/bin/lxpolkit &
-#compton -b
+compton -b
 feh --no-fehbg --bg-fill "$HOME/.local/share/wallpaper.png"
 
 dunst & 
