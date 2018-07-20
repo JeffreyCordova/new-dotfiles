@@ -5,6 +5,8 @@
 # /___/____/_/ /_/_/   \___/  
 #                             
 
+export DISPLAY=:0
+
 #---[zplug loading]-------------------------------------------------------------
 source /usr/share/zsh/scripts/zplug/init.zsh
 
@@ -57,15 +59,15 @@ alias grep="grep --color=auto"
 alias path='printf "${PATH//:/\\n}\n"'
 
 #---[system]
-alias shutdown="shutdown -h now"
+#alias shutdown="shutdown -h now"
 alias reflector="sudo reflector --verbose \
                                 --protocol https \
                                 --latest 200 \
                                 --sort rate \
                                 --save /etc/pacman.d/mirrorlist"
-alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
-                         <(pacaur -Sqg base base-devel | sort) \
-                         > pkgs.lst"
+#alias pkg-list="comm -23 <(pacaur -Qqt | sort) \
+#                         <(pacaur -Sqg base base-devel | sort) \
+#                         > pkgs.lst"
 
 #---[tmux]
 alias tmuxk="tmux kill-session -t"
@@ -74,8 +76,8 @@ alias tmuxn="tmuxd -n"
 alias tmuxa="tmuxd -a"
 
 #---[applications]
-alias glances="glances --disable-bg"
-alias dia="dia --integrated"
+#alias glances="glances --disable-bg"
+#alias dia="dia --integrated"
 
 #---[tmux environment refresh]--------------------------------------------------
 if [ -n "$TMUX" ]; then
@@ -91,25 +93,6 @@ fi
 function preexec() {
     tmux_refresh_env
 }
-
-#---[even-better-ls]------------------------------------------------------------
-#LS_COLORS=$(ls_colors_generator)
-
-#run_ls() {
-#    ls-i --color=auto -w $(tput cols) "$@"
-#}
-
-#run_dir() {
-#    dir-i --color=auto -w $(tput cols) "$@"
-#}
-
-#run_vdir() {
-#    vdir-i --color=auto -w $(tput cols) "$@"
-#}
-
-#alias ls="run_ls"
-#alias dir="run_dir"
-#alias vdir="run_vdir"
 
 #---[spaceship theme settings]--------------------------------------------------
 #---[directory]
